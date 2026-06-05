@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Register - Phrendly
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- REGISTER PAGE -->
+
+    <section class="register-page">
+
+        <!-- LEFT SIDE -->
+
+        <div class="register-left">
+
+            <h1>
+                Join Phrendly
+            </h1>
+
+            <p>
+
+                Create your account
+                and start connecting
+                with people around
+                the world.
+
+            </p>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="register-right">
+
+            <form class="register-form">
+
+                <h2>
+                    Create Account
+                </h2>
+
+                <!-- ERROR MESSAGE -->
+                <div id="registerError" class="error-message"></div>
+
+                <!-- USERNAME -->
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Username"
+                    required
+                >
+
+                <!-- EMAIL -->
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <!-- PASSWORD -->
+<div class="password-box">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    required
+                >
+                <span
+                class="toggle-password"
+                onclick="togglePasswordVisibility('password')">
+            </span>
+            
+
+                <!-- CONFIRM PASSWORD -->
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password"
+                    required
+                >
+
+                <!-- REFERRAL CODE -->
+
+                <input
+                    type="text"
+                    id="referralCode"
+                    placeholder="Referral Code (Optional)"
+                >
+
+                <!-- BUTTON -->
+
+                <button
+                    id="registerBtn"
+                    type="button">
+
+                    Create Account
+
+                </button>
+
+                <!-- LOGIN -->
+
+                <p class="login-text">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

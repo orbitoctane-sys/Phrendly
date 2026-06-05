@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Dashboard - Phrendly
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <style>
+        .dashboard-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg') center/cover no-repeat fixed;
+        }
+
+        .dashboard-card {
+            background: rgba(255, 255, 255, 0.1);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            color: white;
+        }
+
+        .dashboard-card h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+            color: #4dff91;
+        }
+
+        .user-info {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border-left: 3px solid #4dff91;
+        }
+
+        .user-info label {
+            display: block;
+            font-size: 12px;
+            color: #aaa;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .user-info p {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            margin: 0;
+        }
+
+        .dashboard-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-logout {
+            flex: 1;
+            padding: 12px 25px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-logout:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+        }
+
+        .btn-home {
+            flex: 1;
+            padding: 12px 25px;
+            background: #4dff91;
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-home:hover {
+            background: #3ddd7a;
+            transform: translateY(-2px);
+        }
+
+        .status-active {
+            color: #4dff91;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- DASHBOARD -->
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-card">
+
+            <h1>Welcome, <span id="userName">User</span>!</h1>
+
+            <div class="user-info">
+                <label>Username</label>
+                <p id="userUsername">-</p>
+            </div>
+
+            <div class="user-info">
+                <label>Email Address</label>
+                <p id="userEmail">-</p>
+            </div>
+
+            <div class="user-info">
+                <label>Account Status</label>
+                <p class="status-active">✓ Active</p>
+            </div>
+
+            <div class="dashboard-buttons">
+                <button class="btn-home" onclick="window.location.href='index.html'">
+                    Home
+                </button>
+                <button class="btn-logout" onclick="logout()">
+                    Logout
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

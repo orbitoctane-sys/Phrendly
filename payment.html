@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Payment - Phrendly
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body class="payment-page">
+
+    <div class="payment-container">
+
+        <h1>
+            Activate Account
+        </h1>
+
+        <p class="payment-subtitle">
+
+            Complete payment to unlock
+            the main dashboard.
+
+        </p>
+
+        <!-- PAYMENT CARD -->
+
+        <div class="payment-card">
+
+            <h2>
+                Account Activation
+            </h2>
+
+            <div class="price-box">
+
+                <span>
+                    Activation Fee
+                </span>
+
+                <h1>
+                    KES 300
+                </h1>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    Full dashboard access
+                </li>
+
+                <li>
+                    Secure platform features
+                </li>
+
+                <li>
+                    Community access
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- PHONE NUMBER -->
+
+        <div class="phone-section">
+
+            <label>
+                Phone Number
+            </label>
+
+            <input
+                type="text"
+                id="phoneNumber"
+                placeholder="07XXXXXXXX"
+            >
+
+        </div>
+
+        <!-- MPESA CARD -->
+
+        <div class="payment-method">
+
+            <div class="payment-icon">
+                📱
+            </div>
+
+            <div class="payment-method-text">
+
+                <h2>
+                    M-Pesa
+                </h2>
+
+                <p>
+                    Pay securely via M-Pesa STK Push
+                </p>
+
+            </div>
+
+            <div class="payment-check">
+                ✔
+            </div>
+
+        </div>
+
+        <!-- BUTTON -->
+
+        <button 
+           class="activate-btn"
+           id="payBtn">
+
+            Pay KES 300 & Activate
+
+        </button>
+
+    </div>
+    <script>
+
+document
+.getElementById("payBtn")
+.addEventListener(
+    "click",
+    async function(){
+
+        const phone =
+        document.getElementById(
+            "phoneNumber"
+        ).value.trim();
+
+        if(!phone){
+
+            alert(
+                "Enter your phone number"
+            );
+
+            return;
+        }
+
+        try {
+
+    const response = await fetch(
+        "http://localhost:3000/create-order",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                phone: phone
+            })
+        }
+    );
+
+    const data = await response.json();
+
+    console.log(data);
+
+    alert(
+        JSON.stringify(data)
+    );
+
+} catch(error) {
+
+    console.log(error);
+
+    alert(
+        "Failed to create order"
+    );
+
+}
+
+    });
+
+</script>
+
+</body>
+
+</html>

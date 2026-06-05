@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Login - Phrendly
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- LOGIN SECTION -->
+
+    <section class="login-page">
+
+        <!-- LEFT SIDE -->
+
+        <div class="login-left">
+
+            <h1>
+                Welcome Back
+            </h1>
+
+            <p>
+
+                Login to continue
+                connecting with
+                the Phrendly community.
+
+            </p>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="login-right">
+
+            <form class="login-form">
+
+                <h2>
+                    Login
+                </h2>
+
+                <!-- ERROR MESSAGE -->
+
+                <div
+                    id="loginError"
+                    class="error-message">
+                </div>
+
+                <!-- EMAIL -->
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <!-- PASSWORD -->
+
+                <div class="password-box">
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Password"
+                        required
+                    >
+
+                    <span
+                        class="toggle-password"
+                        onclick="togglePassword('loginPassword')">
+
+                        👁
+
+                    </span>
+
+                </div>
+
+                <!-- BUTTON -->
+
+                <button
+                    id="loginBtn"
+                    type="button">
+
+                    Login
+
+                </button>
+
+                <!-- FORGOT PASSWORD -->
+
+                <p class="forgot-password">
+
+                    <a href="forgot-password.html">
+
+                        Forgot Password?
+
+                    </a>
+
+                </p>
+
+                <!-- REGISTER -->
+
+                <p class="register-text">
+
+                    Don't have an account?
+
+                    <a href="register.html">
+
+                        Register
+
+                    </a>
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

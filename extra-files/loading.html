@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connecting to Pesapal</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    text-align:center;
+}
+
+.spinner{
+    width:70px;
+    height:70px;
+    border:6px solid rgba(255,255,255,.2);
+    border-top:6px solid #4dff91;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:auto;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+h2{
+    margin-top:20px;
+}
+
+p{
+    opacity:.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="spinner"></div>
+
+    <h2>Connecting to Pesapal...</h2>
+
+    <p>Please wait while we prepare your payment.</p>
+
+</div>
+
+<script>
+
+setTimeout(() => {
+
+    window.location.href = "payment.html";
+
+}, 3000);
+
+</script>
+</body>
+</html>
