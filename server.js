@@ -2,7 +2,18 @@ const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
 
-const { consumerKey, consumerSecret } = require("./config");
+let consumerKey = process.env.consumerKey || process.env.CONSUMER_KEY;
+let consumerSecret = process.env.consumerSecret || process.env.CONSUMER_SECRET;
+
+if (!consumerKey || !consumerSecret) {
+    try {
+        const config = require("./config");
+        consumerKey = config.consumerKey;
+        consumerSecret = config.consumerSecret;
+    } catch (error) {
+        console.warn("config.js not found; make sure consumerKey and consumerSecret are set in env vars.");
+    }
+}
 
 const app = express();
 
