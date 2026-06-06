@@ -52,7 +52,7 @@ function registerUser() {
     document.getElementById('password').value;
 
     const confirmPassword =
-    document.getElementById('confirm-password').value;
+    document.getElementById('confirmPassword').value;
 
     const errorDiv =
     document.getElementById('registerError');
@@ -185,7 +185,7 @@ function registerUser() {
     setTimeout(() => {
 
         window.location.href =
-        'loading.html';
+        'extra-files/loading.html';
 
     }, 1500);
 
@@ -283,7 +283,7 @@ function loginUser() {
     setTimeout(() => {
 
         window.location.href =
-        'loading.html';
+        'extra-files/loading.html';
 
     }, 1000);
 
