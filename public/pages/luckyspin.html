@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lucky Spin</title>
+
+    <link rel="stylesheet" href="luckyspin.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Badge -->
+        <div class="badge">
+            <i class="fa-solid fa-dice"></i>
+            LUCKY SPIN
+        </div>
+
+        <!-- Title -->
+        <h1>Spin & Win Big</h1>
+
+        <p class="subtitle">
+            Place your bet, spin the wheel, and multiply your winnings up to 6x
+        </p>
+
+        <!-- Balance Section -->
+        <div class="top-row">
+
+            <div class="balance-card">
+
+                <div class="balance-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+
+                <div>
+                    <span>LUCKY SPIN BALANCE</span>
+                    <h2>KES 0.00</h2>
+                </div>
+
+            </div>
+
+            <button class="topup-btn">
+                <i class="fa-solid fa-plus"></i>
+                Top Up
+            </button>
+
+        </div>
+
+        <!-- Bet Card -->
+        <div class="card">
+
+            <div class="card-title">
+
+                <div class="icon-circle">
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+
+                <h3>Place Your Bet</h3>
+
+            </div>
+
+            <label for="betAmount">Bet Amount (KES)</label>
+
+            <input
+                id="betAmount"
+                type="number"
+                placeholder="Minimum: KES 30.00">
+
+            <button id="spinBtn" class="spin-btn">
+                <i class="fa-solid fa-rotate"></i>
+                Spin Now
+            </button>
+
+        </div>
+
+        <!-- Wheel Card -->
+        <div class="wheel-card">
+
+            <div class="pointer"></div>
+
+            <div class="wheel" id="wheel">
+
+                <span class="label l1">0x</span>
+                <span class="label l2">1x</span>
+                <span class="label l3">2x</span>
+                <span class="label l4">3x</span>
+                <span class="label l5">4x</span>
+                <span class="label l6">5x</span>
+                <span class="label l7">6x</span>
+
+                <div class="center-circle">
+                    <i class="fa-solid fa-dice"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="luckyspin.js"></script>
+
+</body>
+
+</html>

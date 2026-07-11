@@ -1,0 +1,279 @@
+/* AFFILIATE SECTION STYLES FOR DASHBOARD */
+
+.affiliate-main {
+    width: 100%;
+    color: #fff;
+    padding: 0;
+}
+
+.affiliate-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 2px solid #7c3aed;
+}
+
+.affiliate-header h1 {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+    color: #7c3aed;
+}
+
+.affiliate-header p {
+    font-size: 1rem;
+    color: #aaa;
+    margin: 0;
+}
+
+.affiliate-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.referral-box {
+    background: rgba(124, 58, 237, 0.1);
+    border: 2px solid #7c3aed;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.referral-box h2 {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    color: #7c3aed;
+}
+
+.link-section,
+.code-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.referral-input,
+.referral-code-input {
+    flex: 1;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #7c3aed;
+    border-radius: 5px;
+    color: #fff;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.referral-input:focus,
+.referral-code-input:focus {
+    outline: none;
+    border-color: #9f7aea;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
+}
+
+.copy-btn {
+    padding: 10px 15px;
+    background: #7c3aed;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.copy-btn:hover {
+    background: #9f7aea;
+}
+
+.link-note,
+.code-note {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin: 0;
+}
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.stat-card {
+    background: rgba(124, 58, 237, 0.1);
+    border: 2px solid #7c3aed;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(124, 58, 237, 0.2);
+    border-radius: 50%;
+}
+
+.stat-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 0.8rem;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+.stat-value {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #4dff91;
+    font-weight: bold;
+}
+
+.referrals-list {
+    background: rgba(124, 58, 237, 0.1);
+    border: 2px solid #7c3aed;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.referrals-list h2 {                                                   
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    color: #7c3aed;
+}
+
+.list-container {
+    overflow-x: auto;
+}
+
+.referrals-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.referrals-table thead {
+    background: rgba(124, 58, 237, 0.2);
+}
+
+.referrals-table th {
+    padding: 10px;
+    text-align: left;
+    color: #7c3aed;
+    font-weight: bold;
+    border-bottom: 2px solid #7c3aed;
+}
+
+.referrals-table td {
+    padding: 10px;
+    border-bottom: 1px solid #7c3aed;
+    color: #ddd;
+}
+
+.referrals-table tbody tr:hover {
+    background: rgba(124, 58, 237, 0.1);
+}
+
+.no-referrals {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-style: italic;
+}
+
+.how-it-works {
+    background: rgba(124, 58, 237, 0.1);
+    border: 2px solid #7c3aed;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.how-it-works h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.2rem;
+    color: #7c3aed;
+    text-align: center;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.step {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #7c3aed;
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-3px);
+    border-color: #9f7aea;
+    background: rgba(124, 58, 237, 0.1);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: #7c3aed;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 auto 10px;
+}
+
+.step h3 {
+    margin: 0 0 8px 0;
+    color: #7c3aed;
+    font-size: 0.95rem;
+}
+
+.step p {
+    margin: 0;
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .affiliate-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .link-section,
+    .code-section {
+        flex-direction: column;
+    }
+
+    .copy-btn {
+        width: 100%;
+    }
+
+    .stats-section {
+        grid-template-columns: 1fr;
+    }
+
+    .referrals-table {
+        font-size: 0.8rem;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate - Phrendly</title>
+    <link rel="stylesheet" href="../pages/css/affiliate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="affiliate-container">
+        <div class="affiliate-header">
+            <h1><i class="fas fa-link"></i> Affiliate Program</h1>
+            <p>Earn money by referring friends to Phrendly</p>
+        </div>
+
+        <div class="affiliate-content">
+            <!-- Referral Link Section -->
+            <div class="referral-box">
+                <h2>Your Referral Link</h2>
+                <div class="link-section">
+                    <inputtype="text" id="referralLink" readonly class="referral-input">
+                    <button class="copy-btn" onclick="copyToClipboard()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <p class="link-note">Share this link with your friends. They'll earn when they sign up using your link!</p>
+            </div>
+
+            <!-- Referral Code Section -->
+            <div class="referral-box">
+                <h2>Your Referral Code</h2>
+                <div class="code-section">
+                    <inputtype="text" id="referralCode" readonly class="referral-code-input">
+                    <button class="copy-btn" onclick="copyCodeToClipboard()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <p class="code-note">Share your code on social media and earn commissions</p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Referrals</h3>
+                        <p class="stat-value" id="totalReferrals">0</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Earnings</h3>
+                        <p class="stat-value" id="totalEarnings">Ksh 0</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Commission Per Referral</h3>
+                        <p class="stat-value">Ksh 100</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Referrals List -->
+            <div class="referrals-list">
+                <h2>Your Referrals</h2>
+                <div id="referralsList" class="list-container">
+                    <p class="no-referrals">No referrals yet. Start sharing your link!</p>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="how-it-works">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Share Your Link</h3>
+                        <p>Copy your unique referral link and share it with friends on social media or email</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>They Sign Up</h3>
+                        <p>When your friends click your link and register on Phrendly, they become your referrals</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>You Earn</h3>
+                        <p>You earn Ksh 100 for every successful referral. The more you refer, the more you earn!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./affiliate.js"></script>
+</body>
+</html>
